@@ -10,6 +10,12 @@ Base = declarative_base()
 
 def get_engine():
     db_url = settings.DATABASE_URL
+    # Render and Heroku use postgres:// which SQLAlchemy requires as postgresql+psycopg2://
+    if db_url.startswith("postgres://"):
+        db_url = db_url.replace("postgres://", "postgresql+psycopg2://", 1)
+    elif db_url.startswith("postgresql://") and "+psycopg2" not in db_url:
+        db_url = db_url.replace("postgresql://", "postgresql+psycopg2://", 1)
+
     try:
         if db_url.startswith("postgresql"):
             # Attempt to connect to PostgreSQL with a short timeout
