@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply min-h-screen bg-slate-50 text-slate-800 antialiased;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+}
+
+.academic-gradient {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0369a1 100%);
+}
+
+.faculty-gradient {
+  background: linear-gradient(135deg, #2e1065 0%, #4c1d95 50%, #6d28d9 100%);
+}
+
+.student-gradient {
+  background: linear-gradient(135deg, #082f49 0%, #075985 50%, #0284c7 100%);
+}
+

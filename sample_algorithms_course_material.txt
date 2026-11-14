@@ -1,0 +1,14 @@
+Module 1: Dynamic Programming Paradigms
+Dynamic programming is an algorithmic paradigm that solves problems by combining solutions to overlapping subproblems.
+Optimal substructure is present when an optimal solution to a problem contains optimal solutions to subproblems.
+We formulate recurrence relations and solve base cases using memoization tables to avoid redundant computation.
+The 0/1 Knapsack problem demonstrates optimal substructure where item choices depend on remaining capacity constraints.
+Longest common subsequence (LCS) algorithms similarly demonstrate overlapping subproblems in string analysis.
+
+Module 2: Graph Theory & Shortest Path Structures
+Graph theory studies vertices and edges representing relational and networked data structures.
+Single-source shortest path problems determine minimum weight paths from a start node to all reachable vertices.
+The Bellman-Ford algorithm iteratively relaxes edges |V|-1 times and effectively identifies negative-weight cycles in directed graphs.
+Dijkstra's greedy approach achieves optimal runtime complexity when all edge weights are non-negative.
+All-pairs shortest path paradigms like Floyd-Warshall use dynamic programming matrix representations.
+
